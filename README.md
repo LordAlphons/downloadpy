@@ -21,10 +21,10 @@ Automatiza la descarga y conversión de medios con Python. Este proyecto permite
 git clone https://github.com/LordAlphons/downloadpy.git
 cd downloadpy
 pip install -r requirements.txt
+```
+---
 
-
-
-🧩 Flujo de uso
+## 🧩 Flujo de uso
 - Ejecutar el script de descarga
 Incluye la URL del video:
 python descargarv2.py "https://ejemplo.com/video"
@@ -35,13 +35,13 @@ yt-dlp --cookies cookies.txt "https://ejemplo.com/video"
 
 
 
-📂 Acceso restringido
+## 📂 Acceso restringido
 Debes haber sido invitado a la carpeta privada que contiene el video. Sin autorización, el recurso no será accesible.
 
-🛡️ Seguridad
+## 🛡️ Seguridad
 - Archivos .env, .json, .txt sensibles están ignorados vía .gitignore.
 - No subas cookies válidas al repositorio público.
 
-📄 Licencia
+## 📄 Licencia
 Este proyecto está bajo la Licencia MIT.
 
