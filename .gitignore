@@ -1,0 +1,29 @@
+# Node modules y entornos virtuales
+node_modules/
+venv/
+__pycache__/
+
+# Archivos de sistema y temporales
+.DS_Store
+Thumbs.db
+
+# IDEs y editores
+.vscode/
+.idea/
+
+# Archivos generados (JSON, TXT)
+*.json
+*.txt
+*.mp4
+*.m4a
+*.webm
+*.mkv
+
+# Logs y datos temporales
+*.log
+*.bak
+*.tmp
+
+# Archivos sensibles o personales
+.env
+.secret*
