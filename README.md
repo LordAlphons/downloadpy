@@ -8,7 +8,7 @@ Automatiza la descarga y conversión de medios con Python. Este proyecto permite
 - `convertir.py`: Convierte archivos descargados.
 - `media_links.json`: Contiene enlaces de medios.
 - `cookies.json` / `cookies.txt`: Cookies para autenticación. *No se versionan*.
-- `BOTIC-SOFOF...mp4`: Ejemplo de archivo descargado.
+- `*...mp4`: Ejemplo de archivo descargado.
 - `.gitignore`: Protección contra archivos sensibles.
 
 ## ⚙️ Instalación
