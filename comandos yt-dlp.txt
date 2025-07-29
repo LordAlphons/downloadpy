@@ -1,0 +1,26 @@
+🧩 1. Comando básico autenticado
+yt-dlp --cookies cookies.txt "URL_DEL_VIDEO"
+
+- Uso inicial para acceder a contenido protegido (ej: Google Drive).
+- No incluye optimizaciones de descarga.
+
+⚡ 2. Comando optimizado para velocidad máxima
+yt-dlp --cookies cookies.txt \
+       --http-chunk-size 20M \
+       --no-part \
+       --throttled-rate 0 \
+       --concurrent-fragments 4 \
+       --progress \
+       "URL_DEL_VIDEO"
+
+- Maximiza velocidad y elimina fragmentos .part.
+- Ideal para proyectos automatizados como downloadpy.
+
+🧠 3. Variante con aria2c como downloader (requiere instalación previa)
+yt-dlp --cookies cookies.txt \
+       --external-downloader aria2c \
+       --external-downloader-args "-x 16 -s 16 -k 1M" \
+       "URL_DEL_VIDEO"
+
+- Usa aria2c para descargas multiconexión simultánea.
+- Puede mejorar significativamente en servidores que lo permitan.
