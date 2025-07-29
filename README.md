@@ -1,38 +1,38 @@
-# 🎧 DownloadPy
+🎧 DownloadPy
+Automatiza la descarga y conversión de medios con Python. Este proyecto permite gestionar videos y audios protegidos mediante cookies de sesión y enlaces extraídos manualmente.
 
-Automatiza la descarga y conversión de medios con Python. Este proyecto permite gestionar videos y audios usando cookies de sesión y enlaces extraídos.
+🗂️ Estructura del proyecto
+- descargarv2.py: Script principal para descargar medios desde una URL específica.
+- convertir.py: Convierte cookies en formato .json a .txt para compatibilidad con yt-dlp.
+- media_links.json: Contenedor de enlaces de medios recopilados.
+- cookies.json / cookies.txt: Cookies para autenticación. No deben versionarse.
+- *.mp4: Ejemplos de archivos descargados (no incluidos).
+- .gitignore: Protege credenciales y archivos sensibles.
 
-## 🗂️ Estructura
-
-- `descargar.py` / `descargarv2.py`: Scripts para descarga de medios.
-- `convertir.py`: Convierte archivos descargados.
-- `media_links.json`: Contiene enlaces de medios.
-- `cookies.json` / `cookies.txt`: Cookies para autenticación. *No se versionan*.
-- `*...mp4`: Ejemplo de archivo descargado.
-- `.gitignore`: Protección contra archivos sensibles.
-
-## ⚙️ Instalación
-
-```bash
+⚙️ Instalación
 git clone https://github.com/LordAlphons/downloadpy.git
 cd downloadpy
 pip install -r requirements.txt
 
-🧩 Flujo de uso
-Edita y Ejecuta descargarv2.py incluyendo la URL del video que deseas obtener al final del archivo:
-python descargarv2.py "https://ejemplo.com/video"
 
-Una vez obtenidas las cookies en formato .json, usa convertir.py para convertirlas a .txt:
+
+🧩 Flujo de uso
+- Ejecuta el script de descarga Edita el archivo descargarv2.py y asegúrate de incluir la URL del video:
+python descargarv2.py "https://ejemplo.com/video"
+- Convierte las cookies Una vez generadas las cookies en formato .json, transforma a .txt para usar con yt-dlp:
 python convertir.py
-- Usar yt-dlp
-Con el archivo cookies.txt ya generado, descarga el video directamente con yt-dlp:
+- Descarga el video con yt-dlp Utiliza el archivo cookies.txt con el comando:
 yt-dlp --cookies cookies.txt "https://ejemplo.com/video"
 
-📂 Nota importante:
-Para acceder al video y usar correctamente los scripts, debes haber sido invitado a la carpeta privada que contiene el recurso. Sin acceso autorizado, la descarga no funcionará correctamente.
+
+
+📂 Acceso restringido
+Para que la descarga funcione correctamente, debes haber sido invitado a la carpeta privada que contiene el video. Sin acceso autorizado, el contenido no será accesible.
 
 🛡️ Seguridad
-- Archivos como .env, .txt y .json están ignorados vía .gitignore.
-- No subas cookies válidas al repositorio público.
+- Cookies, credenciales y archivos .env están protegidos por .gitignore.
+- Nunca subas cookies reales o archivos sensibles al repositorio público.
+
 📄 Licencia
 Este proyecto está bajo la Licencia MIT.
+
