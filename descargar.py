@@ -34,4 +34,4 @@ def extraer_media_links(url_pagina, cookies_path):
     print("🎯 Links detectados guardados en media_links.json")
 
 # Llamada con cookies
-extraer_media_links("https://drive.google.com/file/d/1K79jnPCUqon_BhOJAsRQ5eRPMBU5y46Z/view", "cookies.json")
+extraer_media_links("URL-AQUI", "cookies.json")

@@ -59,6 +59,6 @@ def extraer_media_links(url_pagina, cookies_path):
 
 # Ejemplo de uso
 extraer_media_links(
-    "https://drive.google.com/file/d/1C4GfDiUvCGg1SFuepWyacA5kEG3aX4qt/view",
+    "URL-AQUI",
     "cookies.json"
 )
